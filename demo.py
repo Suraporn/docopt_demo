@@ -12,6 +12,16 @@ Options:
 """ 
 
 from docopt import docopt
-opt = docopt(__doc__)
-print(opt)
-print(type(opt))
+
+# define main function
+def main():
+    # code for "guts" of script goes here
+    opt = docopt(__doc__)
+    print(opt)
+    print(type(opt))
+
+# code for other functions & tests goes here
+
+# call main function
+if __name__ == "__main__":
+    main()
